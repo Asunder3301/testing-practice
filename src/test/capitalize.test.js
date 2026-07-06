@@ -10,6 +10,10 @@ test("Capitalize the first letter of a given string", () => {
       input: "a short string",
       expected: "A short string",
     },
+    {
+      input: "that's one small step for man, one giant leap for mankind.",
+      expected: "That's one small step for man, one giant leap for mankind.",
+    },
   ];
 
   testCases.forEach((test) => {

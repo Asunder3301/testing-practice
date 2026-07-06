@@ -14,6 +14,10 @@ test("Return object with array average, minimum, maximum, and length", () => {
       input: [1, 8, 3, 4, 2, 6],
       expected: { average: 4, min: 1, max: 8, length: 6 },
     },
+    {
+      input: [6, 5, 3, 6, 233],
+      expected: { average: 50.6, min: 3, max: 233, length: 5 },
+    },
   ];
 
   testCases.forEach((test) => {

@@ -1,9 +1,18 @@
 import { reverseString } from "../index";
 
 test("Reverse a given string", () => {
-  expect(reverseString("string")).toBe("gnirts");
-});
+  const testCases = [
+    {
+      input: "string",
+      expected: "gnirts",
+    },
+    {
+      input: "a short string",
+      expected: "gnirts trohs a",
+    },
+  ];
 
-test("Reverse a given string (Case 2)", () => {
-  expect(reverseString("a short string")).toBe("gnirts trohs a");
+  testCases.forEach((test) => {
+    expect(reverseString(test.input)).toBe(test.expected);
+  });
 });

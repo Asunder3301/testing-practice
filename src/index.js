@@ -25,18 +25,15 @@ const calculator = {
 };
 
 function analyzeArray(array) {
-  const average =
-    array.reduce((accumulator, currentVal) => {
-      return accumulator + currentVal;
-    }, 0) / array.length;
-
-  const min = Math.min(...array);
-
-  const max = Math.max(...array);
-
-  const length = array.length;
-
-  return { average: average, min: min, max: max, length: length };
+  return {
+    average:
+      array.reduce((accumulator, currentVal) => {
+        return accumulator + currentVal;
+      }, 0) / array.length,
+    min: Math.min(...array),
+    max: Math.max(...array),
+    length: array.length,
+  };
 }
 
 export { capitalize, reverseString, calculator, analyzeArray };

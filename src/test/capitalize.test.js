@@ -13,11 +13,11 @@ test("Capitalize the first letter of a given string", () => {
     {
       input: "that's one small step for man, one giant leap for mankind.",
       expected: "That's one small step for man, one giant leap for mankind.",
-    }, 
+    },
     {
-        input: "git commit src/test/capitalize.test.js",
-        expected: "Git commit src/test/capitalize.test.js"
-    }
+      input: "git commit src/test/capitalize.test.js",
+      expected: "Git commit src/test/capitalize.test.js",
+    },
   ];
 
   testCases.forEach((test) => {

@@ -6,11 +6,7 @@ function capitalize(string) {
 }
 
 function reverseString(string) {
-  if (string === "a short string") {
-    return "gnirts trohs a";
-  } else {
-    return "gnirts";
-  }
+  return string.split("").reverse().join("");
 }
 
 export { capitalize, reverseString };
